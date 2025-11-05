@@ -34,48 +34,52 @@ main {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     gap: 10px;
+    grid-template-areas: 
+    "one one one one one one one one two two two two"
+    "thr thr thr fou fou fou fou fou fou fiv fiv fiv"
+    "six six six six six six sev sev sev sev sev sev"
+    "eig eig eig eig nin nin nin nin ten ten ten ten";
 }
 
-.grid-item:first-child {
-    grid-column: span 8;
+.one {
+    grid-area: one;
 }
 
-.grid-item:nth-child(2) {
-    grid-column: span 4;
+.two {
+    grid-area: two;
 }
 
-.grid-item:nth-child(3) {
-    grid-column: span 3;
+.thr {
+    grid-area: thr;
 }
 
-.grid-item:nth-child(4) {
-    grid-column: 4 / 10;
+.fou {
+    grid-area: fou;
 }
 
-.grid-item:nth-child(5) {
-    grid-column: -1 / -4;
+.fiv {
+    grid-area: fiv;
 }
 
-.grid-item:nth-child(6) {
-    grid-column: span 6
+.six {
+    grid-area: six;
 }
 
-.grid-item:nth-child(7) {
-    grid-column: 7 / -1;
+.sev {
+    grid-area: sev;
 }
 
-.grid-item:nth-child(8) {
-    grid-column: span 4;
+.eig {
+    grid-area: eig;
 }
 
-.grid-item:nth-child(9) {
-    grid-column: 5 / span 4;
+.nin {
+    grid-area: nin;
 }
 
-.grid-item:nth-child(10) {
-    grid-column: 9 / -1;
+.ten {
+    grid-area: ten;
 }
-
 /* nav bar selectors */
 
 a {
