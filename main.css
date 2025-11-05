@@ -1,16 +1,21 @@
+/* main selectors */
+
 * {
     margin: 0;
     box-sizing: border-box;
     list-style-type: none;
     font-family: Montserrat, sans-serif;
+    text-decoration: none;
 }
 
 body {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-   
+    background-color: black;
 }
 
+
+/* image container selectors */
 img {
     width: 100%;
     display: block;
@@ -22,60 +27,33 @@ main {
     grid-column: span 4;
 }
 
-nav {
-    background-color: black;
-    color: white;
-    text-align: right;
-    padding: 15px
-}
-
-.nav-list li {
-    text-transform: uppercase;
-}
-
-.nav-list li:first-child {
-  font-weight: bold;
-  font-size: 1.8em;
-  margin-bottom: 30px;
-}
-
-
-
 .grid-container {
     padding-inline-start: 0px;
-     grid-template-rows: repeat(4, 200px);
+    grid-template-rows: repeat(4, 250px);
     border: 1px solid black;
     display: grid;
-    grid-template-columns: repeat(12, 1fr) ;
-    
-}
-
-.grid-item {
-    background-color: gray;
-    
-    border: 2px solid black;
-    
+    grid-template-columns: repeat(12, 1fr);
+    gap: 10px;
 }
 
 .grid-item:first-child {
-    grid-column: span 9;
+    grid-column: span 8;
 }
 
 .grid-item:nth-child(2) {
-    grid-column: span 3;
+    grid-column: span 4;
 }
 
 .grid-item:nth-child(3) {
-    grid-column: span 2;
+    grid-column: span 3;
 }
 
 .grid-item:nth-child(4) {
-    grid-column: 3 / 11;
+    grid-column: 4 / 10;
 }
 
-
 .grid-item:nth-child(5) {
-    grid-column: -1 / -3;
+    grid-column: -1 / -4;
 }
 
 .grid-item:nth-child(6) {
@@ -97,3 +75,49 @@ nav {
 .grid-item:nth-child(10) {
     grid-column: 9 / -1;
 }
+
+/* nav bar selectors */
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: orange;
+}
+
+i {
+    color: white;
+    width: 50px;
+    margin-left: 10px;
+}
+
+nav {
+    color: white;
+    text-align: right;
+    padding: 30px;
+}
+
+.nav-list li {
+    text-transform: uppercase;
+}
+
+.nav-list li:first-child {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.links {
+    padding: 10px 0;
+    font-size: 0.8em;
+}
+
+.icons-container {
+    margin-top: 30px;
+    
+}
+
+
+
+
